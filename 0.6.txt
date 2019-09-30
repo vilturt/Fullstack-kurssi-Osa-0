@@ -1,0 +1,21 @@
+note over selain:
+Käyttäjä syöttää kommentin ja painaa "Submit"-painiketta
+end note
+
+note over selain:
+HTML-lomakkeessa (FORM-tagi) ei ole 
+määritetty kenttiä "action" tai "method".
+end note
+
+note over selain:
+Suoritetaan JavaScript-koodia selaimen puolella.
+end note
+
+selain->palvelin:Kommentti ja aikaleima sekä Header, jossa kerrotaan lähetetyn datan olevan JSON-muodossa.
+
+palvelin-->selain: päivitetty JSON-tiedosto
+
+note over selain:
+Selain pysyy samalla sivulla ja 
+nayttää päivittyneen listan kommenteista.
+end note

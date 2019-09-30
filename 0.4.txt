@@ -1,0 +1,29 @@
+note over selain:
+Käyttäjä kirjoittaa textarea-kenttään kommentin 
+ja painaa Submit-painiketta.
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+
+note over palvelin:
+HTML-lomakkeen vastaanottama tieto 
+välitetään palvelimelle koodin käytettäväksi.
+end note
+
+note over palvelin:
+Palvelimen puolella ajetaan koodia. 
+Tallenetaan, tai "pushataan", kommentti 
+sekä ajankohta, jolloin se on 
+kirjoitettu, JSON-tiedostossa olevaan 
+tietorakenteeseen.
+end note
+
+palvelin-->selain: Ladataan notes.html
+palvelin-->selain: Ladataan main.css
+palvelin-->selain: Ladataan main.js
+palvelin-->selain: Ladataan (päivittynyt) data.json
+
+note over selain:
+Käyttäjä näkee syöttämänsä kommentin listassa 
+aikaisemmin syötettyjen kommenttien joukossa.
+end note

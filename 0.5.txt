@@ -1,0 +1,17 @@
+note over selain:
+Käyttäjä siirtyy Single Page App -sivulle
+end note
+
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+
+note over palvelin:
+Palvelin palauttaa sivuston
+end note
+
+palvelin-->selain: Ladataan spa.html
+
+palvelin-->selain: Ladataan main.css
+
+palvelin-->selain: Ladataan spa.js
+
+palvelin-->selain: Ladataan data.json
